@@ -1,0 +1,18 @@
+{
+    "svelteIndentScriptAndStyle": false,
+    "svelteBracketNewLine": false,
+    "arrowParens": "avoid",
+    "endOfLine": "lf",
+    "jsxBracketSameLine": true,
+    "semi": true,
+    "useTabs": false,
+    "tabWidth": 4,
+    "singleQuote": false,
+    "singleAttributePerLine": false,
+    "trailingComma": "all",
+    "printWidth": 250,
+    "plugins": [
+        "prettier-plugin-multiline-arrays"
+    ],
+    "tailwindStylesheet": "./src/app.css"
+}
