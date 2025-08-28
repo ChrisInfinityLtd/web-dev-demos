@@ -1,6 +1,4 @@
-# 三件套教程
-
-## 简介
+# Web 前端三件套教程
 
 网页开发三个基本语言：HTML, CSS, JavaScript.
 
@@ -14,6 +12,6 @@ HTML 诞生于 1990 年，彼时只用于标记文本和超链接。后来发展
 
 JavaScript 出现的略早一点。1995 年首次在 Netscape Navigator 浏览器中引入，用于为网页添加动态交互功能。
 
-## 目录
+本目录包含三件套的教程文档，可以在[这里](https://web-front-docs.vercel.app/)查看。
 
-[HTML 基础](./html.md)
+也可以下载代码之后运行 `pnpm docs:dev` 进入开发模式，修改文档并保存就能查看效果。默认文档地址：http://localhost:5173/
