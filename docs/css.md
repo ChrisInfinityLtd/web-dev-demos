@@ -65,7 +65,7 @@ p, ul, h3 {
 
 - 字号 `font-size`
 
-值：数字+单位
+常用值：数字+单位
 
 常用单位是 px，以像素值指定字体大小。例如：16px。
 
@@ -126,3 +126,61 @@ p, ul, h3 {
 <span class="font-demo2">the lazy dog.</span>
 
 在开发模式下，尝试修改上面的属性并保存，可以看到不同的效果。
+
+## 颜色和边框
+
+- 颜色 `color`
+
+设置元素的文本以及文本装饰的**前景色**。常用值：颜色名称，RGB/RGBA 值，rgb()/rgba() 函数。
+
+例如：blue, #3B71CA, #14A44D80, rgba(255, 0, 0, 0.5)
+
+- 背景色 `background-color`
+
+设置元素的背景色。其值同 `color` 属性。
+
+- 边框 `border`
+
+设置元素的边框，包括宽度、样式和颜色。
+
+`border` 属性可以拆解为三个属性：`border-width`、`border-style`、`border-color`。
+
+当使用 `border` 时，一般这么用：`宽度 样式 颜色`。
+
+例如：`border: 1px solid blue;` 这个规则定义了 1 像素宽、实线、蓝色边框。
+
+分解开就是
+```css
+border-width：1px;
+border-style: solid;
+border-color: blue;
+```
+
+示例
+
+```html
+<style>
+    .color-demo {
+        color: #3B71CA;
+    }
+
+    .border-demo {
+        border: 2px dashed #14A44D80;
+    }
+</style>
+<span class="color-demo font-demo">Colorful </span>
+<span class="border-demo font-demo">text</span>
+```
+
+<style>
+    .color-demo {
+        color: #3B71CA;
+    }
+
+    .border-demo {
+        border: 2px dashed #14A44D80;
+    }
+</style>
+<span class="color-demo font-demo">Colorful </span>
+<span class="border-demo font-demo">text</span>
+
