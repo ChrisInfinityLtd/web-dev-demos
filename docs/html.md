@@ -93,7 +93,18 @@ HTML 已经发展到第五代标准，即 HTML 5。后面的示例都以 HTML 5 
 <hr />
 ```
 
-渲染结果：[demo.html](./demo.html)
+渲染结果：
+
+<div>
+    Michael Portillo: In 1840, one man transformed travel in Britain. His name was George Bradshaw, and his railway guides inspired the Victorians to take to the tracks. Stop by stop, he told them where to travel, what to see and where to stay. 
+    Now, 170 years later, I'm making four long journeys across the length and breadth of the country to see what remains of Bradshaw's Britain. From the early days of Britain's railways, you couldn't contemplate a journey without first consulting Bradshaw's, a comprehensive guide to train timetables. 
+    Over the coming weeks, using an ancient Bradshaw's guide, I will crisscross Britain on four fascinating routes. To view the places and achievements that delighted the Victorians. To see how the railways changed the British people. And to understand how much we've changed since. 
+</div>
+<div>    Along today's route, I'll be discovering how <br /> Manchester came to be known as Cottonopolis.</div>
+<p>Finding out how <span style="font-style: italic; font-weight: bold;">
+    Bradshaw
+</span> helped unify time across <span style="color: red;">the UK</span>.</p>
+<hr />
 
 可以注意到，`<div>` 内的大段文本被按照原样渲染了，没有首行缩进，没有段前段后间距等。相对应的，`<p>` 内的文本是有缩进等格式的。
 
@@ -116,25 +127,43 @@ HTML 已经发展到第五代标准，即 HTML 5。后面的示例都以 HTML 5 
 <table>
     <thead>
     	<tr>
-        	<th>ID</th>
+        	<th>Studio</th>
             <th>Name</th>
         </tr>
     </thead>
     <tbody>
     	<tr>
-        	<td>1</td>
-            <td>Google</td>
+        	<td>Lucasfilms</td>
+            <td>Star Wars</td>
         </tr>
     	<tr>
-        	<td>2</td>
-            <td>Bing</td>
+        	<td>Disney</td>
+            <td>Pirates of the Caribbean</td>
         </tr>
     </tbody>
 </table>
 ```
 
-渲染结果：[demo.html](./demo.html)
+渲染结果：
 
+<table>
+    <thead>
+    	<tr>
+        	<th>Studio</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<tr>
+        	<td>Lucasfilms</td>
+            <td>Star Wars</td>
+        </tr>
+    	<tr>
+        	<td>Disney</td>
+            <td>Pirates of the Caribbean</td>
+        </tr>
+    </tbody>
+</table>
 
 
 块级元素：https://developer.mozilla.org/zh-CN/docs/Glossary/Block-level_content
