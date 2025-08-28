@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     title: "Web Dev Demos",
     description: "Demos and Docs",
+    ignoreDeadLinks: "localhostLinks",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
