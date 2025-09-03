@@ -57,7 +57,7 @@ p, ul, h3 {
 
 
 
-## 字体和文本
+## 字体
 
 - 字体 `font-family`
 
@@ -126,6 +126,23 @@ p, ul, h3 {
 <span class="font-demo2">the lazy dog.</span>
 
 在开发模式下，尝试修改上面的属性并保存，可以看到不同的效果。
+
+## 文本
+
+- 对齐 `text-align`
+
+    设置块元素内文本的对齐方式。常用值：start, end, left, right, center, justify.
+
+    - start: 如果内容方向是左至右，则等于 left，反之则为 right。
+    - end: 如果内容方向是左至右，则等于 right，反之则为 left。
+    - left: 行内内容向左侧边对齐。
+    - right: 行内内容向右侧边对齐。
+    - center: 行内内容居中。
+    - justify: 文字向两侧对齐，将内容隔开，使其左右边缘与行框的左右边缘对齐，对最后一行无效。
+
+- 行高 `line-height`
+
+    设置多行文本的空间量。常用值：数字，含义是字体大小的倍数。
 
 ## 颜色和边框
 
@@ -259,3 +276,74 @@ border-color: blue;
 </div>
 
 通过开发者工具，可以看出带边距盒子的高度变了，因为有内边距。
+
+## 显示类型和布局 `display`
+
+常用的布局模式有“流式布局”，“弹性布局”，“网格布局”。
+
+### 流式布局
+
+流式布局是最基本的布局模式，元素按从上到下从左到右（LTR）的方式进行排列。对于 RTL 文字体系，水平方向是从右到左排列的。
+
+流式布局包含两种模式：
+
+- 块 `display: block;`: 该元素生成一个块级盒子，在正常的流中，该元素之前和之后产生换行。
+- 内联 `display: inline;`: 该元素生成一个或多个行级盒子，它们之前或者之后并不会产生换行。
+
+示例
+
+```html
+<style>
+.block-demo {
+    display: block;
+}
+
+.inline-demo {
+    display: inline;
+}
+</style>
+
+<span class="block-demo">
+    块模式的 span 元素。
+    <div class="inline-demo">内联模式的 div 元素。</div>
+    <div class="inline-demo">内联模式的 div 元素。</div>
+    <div class="inline-demo">内联模式的 div 元素。</div>
+</span>
+<span class="block-demo">块模式的 span 元素。</span>
+```
+
+<style>
+.block-demo {
+    display: block;
+}
+
+.inline-demo {
+    display: inline;
+}
+</style>
+
+<span class="block-demo">
+    块模式的 span 元素。
+    <div class="inline-demo">内联模式的 div 元素。</div>
+    <div class="inline-demo">内联模式的 div 元素。</div>
+    <div class="inline-demo">内联模式的 div 元素。</div>
+</span>
+<span class="block-demo">块模式的 span 元素。</span>
+
+
+### 弹性布局
+
+[MDN链接](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_flexible_box_layout)
+
+弹性布局定义了一种针对用户界面设计而优化的 CSS 盒子模型。在弹性布局模型中，弹性容器的子元素可以在任何方向上排布，也可以“弹性伸缩”其尺寸，既可以增加尺寸以填满未使用的空间，也可以收缩尺寸以避免父元素溢出。子元素的水平对齐和垂直对齐都能很方便的进行操控。通过嵌套这些框（水平框在垂直框内，或垂直框在水平框内）可以在两个维度上构建布局。
+
+弹性布局有一个很重要的概念：轴。轴分为主轴和交叉轴。主轴方向就是弹性布局的排列方向。而交叉轴方向是主轴的垂直方向。
+
+开启弹性布局: `display: flex;` 
+
+排列方向：`flex-direction`
+- 水平方向：`flex-direction: row;` 主轴水平，交叉轴垂直。
+- 垂直方向：`flex-direction: column;` 主轴垂直，交叉轴水平。
+- 也可以简称为横向、纵向。
+
+主轴对齐方式：`justify-content`
