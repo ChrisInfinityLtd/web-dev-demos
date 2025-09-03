@@ -1,0 +1,7 @@
+{
+    "name": "web-dev-demos",
+    "compatibility_date": "2025-09-03",
+    "assets": {
+        "directory": "./docs/.vitepress/dist",
+    },
+}
